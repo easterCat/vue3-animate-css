@@ -1,0 +1,21 @@
+.animate__ease {
+    animation-timing-function: ease;
+}
+.animate__ease-in {
+    animation-timing-function: ease-in;
+}
+.animate__ease-out {
+    animation-timing-function: ease-out;
+}
+.animate__ease-in-out {
+    animation-timing-function: ease-in-out;
+}
+.animate__linear {
+    animation-timing-function: linear;
+}
+.animate__step-start {
+    animation-timing-function: step-start;
+}
+.animate__step-end {
+    animation-timing-function: step-end;
+}

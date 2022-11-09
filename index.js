@@ -1,4 +1,5 @@
 import "animate.css";
+import "./main.css";
 
 const VueAnimateCss = {};
 
@@ -9,7 +10,7 @@ VueAnimateCss.install = function (Vue, option) {
         mounted: function (el, binding, vnode, prevVnode) {
             console.log(binding);
             const { value } = binding;
-            const { direction, delay } = value;
+            const { direction, delay, timing } = value;
 
             let values = ["animate__animated", "linear"];
 
@@ -21,6 +22,12 @@ VueAnimateCss.install = function (Vue, option) {
 
             if (!!delay) {
                 values.push(`animate__delay-${delay}s`);
+            }
+
+            if (!!timing) {
+                values.push(`animate__${timing}`);
+            } else {
+                values.push("animate__linear");
             }
 
             el.addEventListener(

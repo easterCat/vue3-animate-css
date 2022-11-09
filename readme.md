@@ -10,7 +10,7 @@ npm install vue3-animate-css --save
 
 - direction : animate type
   - value : <https://animate.style/>
-  - default : animate__fadeIn
+  - default : fadeIn
 - delay : animate delay =>  1,2,3,4,5
 - timing:
   - value  : ease / ease-in /  ease-out / ease-in-out / linear / step-start  step-end
